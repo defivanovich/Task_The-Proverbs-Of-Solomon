@@ -12,10 +12,10 @@ namespace TheProverbsOfSolomon
         static void Main(string[] args)
         {
 
-            FileInfo f = new FileInfo("G:\\Git\\Files\\output\\base_output.txt");
+            FileInfo f = new FileInfo("G:\\Git\\Projects\\Files\\base_output.txt");
             StreamWriter w = f.CreateText();
 
-            using (var sr = new StreamReader("G:\\Git\\Files\\input\\base.txt", Encoding.GetEncoding(1251)))
+            using (var sr = new StreamReader("G:\\Git\\Projects\\Files\\input\\base.txt", Encoding.GetEncoding(1251)))
             {
                 string read = null;
                 while ((read = sr.ReadLine()) != null)
