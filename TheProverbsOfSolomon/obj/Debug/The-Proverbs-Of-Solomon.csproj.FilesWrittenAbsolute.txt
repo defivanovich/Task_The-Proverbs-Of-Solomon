@@ -1,5 +1,0 @@
-/home/patient/develop/def/Task_The-Proverbs-Of-Solomon/TheProverbsOfSolomon/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/home/patient/develop/def/Task_The-Proverbs-Of-Solomon/TheProverbsOfSolomon/bin/Debug/ConsoleApplication2.exe.mdb
-/home/patient/develop/def/Task_The-Proverbs-Of-Solomon/TheProverbsOfSolomon/bin/Debug/ConsoleApplication2.exe
-/home/patient/develop/def/Task_The-Proverbs-Of-Solomon/TheProverbsOfSolomon/obj/Debug/ConsoleApplication2.exe
-/home/patient/develop/def/Task_The-Proverbs-Of-Solomon/TheProverbsOfSolomon/obj/Debug/ConsoleApplication2.exe.mdb
