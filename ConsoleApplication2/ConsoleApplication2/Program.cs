@@ -12,7 +12,6 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
 
-
             FileInfo f = new FileInfo("G:\\Git\\ConsoleApplication2\\Files\\output\\base_output.txt");
             StreamWriter w = f.CreateText();
 
