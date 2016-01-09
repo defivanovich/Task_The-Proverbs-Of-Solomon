@@ -14,7 +14,7 @@ namespace TheProverbsOfSolomon
         {
             var inputFileName = "G:\\Git\\Projects\\Files\\input\\base.txt";
             var outputFileName = "G:\\Git\\Projects\\Files\\output\\base_output.txt";
-            var converter = new ProverbConverter(inputFileName, outputFileName);
+            var ProverbConverter = new ProverbConverter(inputFileName, outputFileName);
             ProverbConverter.Convert();
             Console.WriteLine("Готово!");
             Console.ReadKey();
