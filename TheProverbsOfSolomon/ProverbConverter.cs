@@ -4,7 +4,7 @@ using System.IO;
 
 namespace TheProverbsOfSolomon
 {
-    public class ProverbConverter 
+    public class ProverbConverter
     {
         private string inputFileName;
         private string outputFileName;
@@ -15,31 +15,33 @@ namespace TheProverbsOfSolomon
             this.outputFileName = outputFileName;
         }
 
+        public string ConvertString(string text)
+        {
+            char ch = ')';
+            int indexOfChar = text.IndexOf(ch);
+            text = text.Substring(indexOfChar + 1).Trim();
+            text = String.Format("<item>{0}</item>", text);
+
+            return text;
+        }
+
         public void Convert()
         {
             string read = null;
-            char ch = ')';
-
-            FileInfo f = new FileInfo(outputFileName);
-            StreamWriter w = f.CreateText();
+            
+            StringBuilder builder = new StringBuilder();
 
             using (var sr = new StreamReader(inputFileName, Encoding.GetEncoding(1251)))
             {
 
                 while ((read = sr.ReadLine()) != null)
                 {
-
-                    int indexOfChar = read.IndexOf(ch);
-                    read = read.Substring(indexOfChar + 1).Trim();
-
-                    var newS = String.Format("<item>{0}</item>", read);
-                    w.WriteLine(newS);
-                    w.Write(w.NewLine);
-
+                    builder.Append(ConvertString(read)).AppendLine();
                 }
             }
-            w.Close();
 
+            File.WriteAllText(outputFileName, builder.ToString());
         }
+
     }
 }
